@@ -5,12 +5,10 @@
     <!-- <header>
     <nav>
     <ul>
-
       <li><nuxt-link to='/about'>About</nuxt-link></li>
       <li><nuxt-link to='/next'>Next</nuxt-link></li>
       <li><nuxt-link to='/gallery'>Gallery</nuxt-link></li>
       <li><nuxt-link to='/contact'>Contact</nuxt-link></li>
-
     </ul>
           <h1 class="title">
             week 09: nuxt - API

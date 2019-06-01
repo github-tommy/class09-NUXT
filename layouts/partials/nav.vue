@@ -12,7 +12,7 @@
     </ul>
     
     <h1 class="title">
-      Living and Retiring in WA
+      Living and Retiring in WA - by @Tommy
     </h1>
     <h2 class="subtitle">
     week09: nuxt - application programming interface
