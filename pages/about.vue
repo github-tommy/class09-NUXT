@@ -7,6 +7,7 @@
     <div v-for="article in posts" v-bind:key="article">
     <section>
       <h2>{{article.title}}</h2>
+      <h3 >by {{article.author}}</h3>
       <p>{{article.description}}</p>
       <br>
     </section>
@@ -23,7 +24,6 @@ export default {
    return {
     //  sets posts as null as it can be filled with an array later
     posts: {},
-
    }
  },
  created: function() {
