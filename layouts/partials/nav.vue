@@ -5,14 +5,14 @@
     <ul>
       <!-- include the new page -->
       <li><nuxt-link to='/'>Home</nuxt-link></li>
-      <li><nuxt-link to='/about'>About</nuxt-link></li>
+      <li><nuxt-link to='/about'>News</nuxt-link></li>
       <li><nuxt-link to='/next'>Next</nuxt-link></li>
       <li><nuxt-link to='/gallery'>Gallery</nuxt-link></li>
       <!-- <li><nuxt-link to='/contact'>Contact</nuxt-link></li> -->
     </ul>
     
     <h1 class="title">
-      Living and Retiring in WA - by @Tommy
+      Living and Retiring in WA - by @tommy
     </h1>
     <h2 class="subtitle">
     week09: nuxt - application programming interface

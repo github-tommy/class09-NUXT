@@ -1,12 +1,18 @@
- <template lang="html">
- 
- <div class="">
-   <h1>About</h1>
-   <h1>{{test}}</h1>
-   <button v-on:click="greet">Greet</button>
-<!-- homepage -->
-<!-- <nuxt-link to='/'>home</nuxt-link> -->
- </div>
+ <template>
+  <div>
+    <br>
+    <h1>Latest News Update:</h1>
+    <br>
+   <!-- create articles with v-for -->
+    <div v-for="article in posts" v-bind:key="article">
+    <section>
+      <h2>{{article.title}}</h2>
+      <p>{{article.description}}</p>
+      <br>
+    </section>
+    </div>
+  </div>
+
 </template>
 
 <script>
@@ -15,28 +21,26 @@ import axios from 'axios'
 export default {
  data() {
    return {
-     day: new Date().getDate(),
-     // gets month, add one because months start at 0
-     month: new Date().getMonth() + 1,
+    //  sets posts as null as it can be filled with an array later
+    posts: {},
+
    }
  },
  created: function() {
-   this.test = "Hello Again one More time*";
+  //  this.test = "Hello Again one more and  More time*";
+
    axios.get(`https://newsapi.org/v2/everything?q=mortgage&from=2019-0${this.month}-${this.day-7}&to=2019-0${this.month}-${this.day}&sortBy=relevancy&pageSize=100&apiKey=2b11e9d152424d8e8c4c3f0310e953a5`)
+   
    .then(response => {
-     // JSON responses are automatically parsed.
-     this.posts = response.data
-     console.log(this.posts);
+   
+   // JSON responses are automatically parsed.
+     this.posts = response.data.articles
+
    })
    .catch(e => {
      this.errors.push(e)
    })
    .finally(() => this.loading =true)
- },
- methods: {
-   greet: function() {
-     this.test = "Hello Again";
-   }
  }
 }
 </script>
