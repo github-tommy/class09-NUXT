@@ -1,19 +1,17 @@
  <template>
   <div>
     <br>
-    <h1>Latest News Update:</h1>
-    <br>
+    <h1>Latest News Update:</h1><br>
    <!-- create articles with v-for -->
-    <div v-for="article in posts" v-bind:key="article">
-    <section>
+   <!-- below does NOT work why? -->
+    <!-- <div v-for="article in posts" v-bind:key="article"> -->
+    <section v-for="article in posts">
       <h2>{{article.title}}</h2>
       <h3 >by {{article.author}}</h3>
       <p>{{article.description}}</p>
       <br>
     </section>
-    </div>
   </div>
-
 </template>
 
 <script>
@@ -22,6 +20,7 @@ import axios from 'axios'
 export default {
  data() {
    return {
+     
     //  sets posts as null as it can be filled with an array later
     posts: {},
    }
