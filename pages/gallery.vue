@@ -1,9 +1,9 @@
  <template lang="html">
  
- <div>
+ <div class="search">
    <br>
-   <h1>Nasa Image Collection</h1>
-   <br>
+   <h1>Image Collection</h1>
+   <br/>
   <h2> Type in the image you want to see (sun, aurora etc) in the box below</h2>
   <br>
   <form v-on:submit.prevent="getResult(query)">
@@ -43,13 +43,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.container {
+.search {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 50px;
 }
 
 .results img {
@@ -60,6 +56,7 @@ h1, h2 {
   font-weight: 300;
   font-size: 32px;
 }
+
 ul {
   list-style-type: none;
   padding: 0;

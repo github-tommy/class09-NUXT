@@ -20,11 +20,12 @@ import axios from 'axios'
 export default {
  data() {
    return {
-     
     //  sets posts as null as it can be filled with an array later
-    posts: {},
-   }
- },
+  posts: {},
+  day: new Date().getDate(),
+  month: new Date().getMonth() + 1,
+ }
+},
  created: function() {
   //  this.test = "Hello Again one more and  More time*";
 
