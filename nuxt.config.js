@@ -14,8 +14,13 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel:"stylesheet", href:"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"}
+    ],
+
+    script: [
+      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'  },
+    ],
   },
 
   /*
@@ -41,6 +46,7 @@ export default {
   modules: [
   ],
 
+ 
   /*
   ** Build configuration
   */

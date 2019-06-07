@@ -12,7 +12,7 @@
     </ul>
     
     <h1 class="title">
-      Living and Retiring in WA - by @tommy
+      Living and Retiring in WA - by @Tommy
     </h1>
     <h2 class="subtitle">
     week09: nuxt - application programming interface
@@ -45,7 +45,7 @@ header {
 }
 
 nav {
-    justify-self: ;
+    justify-self: center ;
 }
 ul {
     list-style-type: none;

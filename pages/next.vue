@@ -17,10 +17,11 @@
       </li>
     </ul>
     </br>
-    <button v-on:click="pressed">Press Me</button>
+    <button class="btn btn-primary" v-on:click="pressed">Press Me</button>
     <br/>
     <br/>
-    <button><a v-bind:href="url">Click Me for Joke</a></button>
+    <button class="btn btn-informative"><a v-bind:href="url">Click Me for Joke</a></button>
+    
 </div>
  </div>
 </template>
@@ -64,4 +65,7 @@ export default {
 
 }
 
+* {
+  text-align: center;
+}
 </style>

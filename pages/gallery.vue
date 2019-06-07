@@ -7,7 +7,7 @@
   <h2> Type in the image you want to see (sun, aurora etc) in the box below</h2>
   <br>
   <form v-on:submit.prevent="getResult(query)">
-   <input type="text" v-model="query"/>
+   <input type="text" v-model="query" autofocus/>
 </form>
 <div v-if="results">
 <div v-for="result in results">
@@ -69,4 +69,7 @@ a {
   color: #42b983;
 }
 
+* {
+  text-align: center;
+}
 </style>

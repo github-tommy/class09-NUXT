@@ -18,8 +18,9 @@
           </h2>
     </nav>
     </header> -->
+    <h2></h2>
     <br><br>
-    <p class ="subheading">Why Seattle - Washington? </p> 
+    <p class ="subheading">Why Seattle - Washington? by tommys </p> 
     <p>"Seattle" was named after and in honor of Chief Si'ahl of the local Duwamish and Suquamish tribes, is a seaport city on the west coast of the United States. The city is situated between Puget Sound and Lake Washington, about 100 miles (160 km) south of the Canada–United States border. A major gateway for trade with Asia, Seattle is the fourth-largest port in North America in 2015. According to U.S. Census data released in 2018, the Seattle metropolitan area’s population stands at 3.87 million, and ranks as the 15th largest in the United States. Major cities and area include Bellevue, Clyde Hill, Kirkland, Redmond, Issaquah, Sammamish, Fremont, Ballard and Wallingford. </p>
     <br><br>
     <p class ="subheading">10 Reasons to Invest in Washington</p>
