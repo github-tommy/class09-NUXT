@@ -8,11 +8,12 @@
       <li><nuxt-link to='/about'>News</nuxt-link></li>
       <li><nuxt-link to='/next'>Next</nuxt-link></li>
       <li><nuxt-link to='/gallery'>Gallery</nuxt-link></li>
+      <li><nuxt-link to='/contactmeform'>Contact Me</nuxt-link></li>
       <!-- <li><nuxt-link to='/contact'>Contact</nuxt-link></li> -->
     </ul>
     
     <h1 class="title">
-      Living and Retiring in WA - by @Tommy
+      Living and Retiring in WA - by @tommys
     </h1>
     <h2 class="subtitle">
     week09: nuxt - application programming interface
@@ -30,7 +31,8 @@ export default {
 <style>
 
 header {
-    background: rgb(0, 219, 146);
+    /* background: rgb(0, 219, 146); */
+    background: pink;
     display: grid;
     grid-template-columns: repeat(2,auto);
 }
