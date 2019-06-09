@@ -1,7 +1,10 @@
 import pkg from './package'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
+  router: {
+     base: '/github-tommy/'
+   },
 
   /*
   ** Headers of the page
