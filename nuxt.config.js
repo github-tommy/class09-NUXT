@@ -1,11 +1,15 @@
 import pkg from './package'
 
-export default {
-  mode: 'spa',
-  router: {
-     base: '/github-tommy/'
-   },
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/<repository-name>/'
+  }
+} : {}
+
+export default {
+  mode: 'universal',
+  ...routerBase,
   /*
   ** Headers of the page
   */
